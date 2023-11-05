@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="E"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/avatar_bg"
+        />
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="@id/avatar"
+        android:text="Edurila.com"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/nickname"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="12:34 PM"
+        android:textSize="18sp"
+        android:layout_marginRight="20dp"
+        android:textColor="#747474"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:maxLength="23"
+        app:layout_constraintLeft_toLeftOf="@id/nickname"
+        app:layout_constraintTop_toBottomOf="@id/nickname"
+        android:text="$19 Only (Dirst 10 spots)-Bestselling..."
+        android:textSize="16sp"
+        android:textColor="#747474"
+        />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:maxLength="23"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="@id/title"
+        android:text="Are you looking to Learn Web ..."
+        android:textSize="16sp"
+        android:textColor="#747474"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/content"
+        app:layout_constraintRight_toRightOf="@id/time"
+        android:src="@drawable/star"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
